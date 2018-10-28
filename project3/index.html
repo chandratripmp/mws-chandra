@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandra - Fetch JSON</title>
+    <link rel="stylesheet" href="../css/style-layout.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <!-- 
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+	 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fab fa-contao fa-3x"></i>
+            <span>
+                Mobile Web Specialist
+                <br>
+                <small>
+                    <a href="..">Home</a>
+                    > Fetch JSON
+                </small>
+            </span>
+            <div class="back flex-right">
+                <a href="..">Back</a>
+            </div>
+        </div>
+        <div class="content">
+            <!-- <h2>Special Place</h2> -->
+
+            <div id="map">
+
+            </div>
+        </div>
+
+        <div class="picture" id="picture">
+            <!-- <a href="https://www.instagram.com/malang_mbois/" target="_blank">
+                <img src="../img/tugu-malang.jpg" alt="Alun-alun Tugu Malang">
+            </a> -->
+        </div>
+        <div class="review" id="review">
+            <!-- <p>
+                Setahun setelah kemerdekaan, yakni pada 17 Agustus 1946, ada inisiatif untuk mendirikan tugu di tengah Taman Jaan Pieterzoen
+                Coen (Alun-alun Bunder). Pada saat itu pun batu pertama pembangunan Monumen Tugu ini diletakkan. Monumen
+                ini ditandangani oleh Soekarno dan A.G. Suroto.
+            </p>
+
+            <p>
+                <br>
+                <a href="https://ngalam.co/2015/12/15/sejarah-alun-alun-tugu-malang/" target="_blank">Selengkapnya</a>
+            </p> -->
+        </div>
+        <div class="footer">
+            2018 &copy; Chandra Tri Pamungkas Martin Putra
+        </div>
+    </div>
+
+    <!-- <script src="../js/map.js"></script> -->
+    <script>
+        
+        const accessToken = 'pk.eyJ1IjoiY2hhbmRyYXRyaXBtcCIsImEiOiJjam1tdjMxcTEwbmFlM3FsYm51ZWY3aGphIn0.rmJBcK4lYq4e9GCkGrVZfQ';
+
+        var mymap = L.map('map').setView([-6.221028, 106.791434], 16);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
+            {
+                attribution: '',
+                maxZoom: 20,
+                id: 'mapbox.streets',
+                accessToken: accessToken
+            }).addTo(mymap);
+    </script>
+    <script src="../js/fetch.js"></script>
+</body>
+
+</html>

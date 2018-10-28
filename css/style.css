@@ -1,0 +1,116 @@
+body{
+    background: #e9ecf3;
+    font-family: Verdana;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto 100px 100px 100px 100px auto;
+    grid-gap: 0px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content{
+    /* background: #81cfe0; */
+    background: #fff;
+    grid-column: 5/-1;
+    color: #678098;
+    font-size: 14px;
+
+}
+
+    .content a{
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        display: block;
+        
+        padding-left: 20px;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+
+    .content a:hover{
+        text-decoration: none;
+        color: #5b9bd1;
+        background: #f2f6f9;
+    }
+
+        .content a i{
+            margin-right: 15px;
+        }
+
+.footer{
+    background: #5e738b;
+    grid-column: 1/-1;
+
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header{
+    background: #5e738b;
+    grid-column: 1/-1;
+    color: #fff;
+    /* font-size: 12px; */
+    padding: 20px;
+    
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+    .header i{
+        margin-right: 15px;
+    }
+
+    .header span{
+        font-size: 16px;
+    }
+
+.profile{
+    background: #3498db;
+    grid-column: 1/5;
+    grid-row: 2/-1;
+}
+
+    .profile img{
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 100%;
+        margin: 15px auto;
+    }
+
+/*
+ *  Media Query
+*/
+
+@media only screen and (max-width: 500px){
+    body{
+        margin: 0;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 300px 50px 50px 50px 50px 30px;
+    }
+    .fas, .fab{
+        font-size: 2em !important;
+    }
+    .profile{
+        grid-row: 2/3;
+    }
+    .profile, .content{
+        grid-column: 1/4;
+    }
+}

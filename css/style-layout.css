@@ -1,0 +1,154 @@
+body{
+    background: #e9ecf3;
+    font-family: Verdana;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 0px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content{
+    /* background: #81cfe0; */
+    background: #fff;
+    grid-column: 1/-1;
+    color: #678098;
+    font-size: 14px;
+    padding: 25px;
+}
+
+    /* .content a{
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        display: block;
+        
+        padding-left: 20px;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    } */
+
+    .content a:hover{
+        text-decoration: none;
+        color: #5b9bd1;
+        background: #f2f6f9;
+    }
+
+        .content a i{
+            margin-right: 15px;
+        }
+
+.footer{
+    background: #5e738b;
+    grid-column: 1/-1;
+
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0px;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header{
+    background: #5e738b;
+    grid-column: 1/-1;
+    color: #fff;
+    /* font-size: 12px; */
+    padding: 20px;
+    
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+    .header i{
+        margin-right: 15px;
+    }
+
+    .header span{
+        font-size: 16px;
+    }
+
+        .header span a, .back a{
+            color: #fff;
+        }
+
+#map{
+    height: 350px;
+    width: 100%;
+}
+
+.picture{
+    background-color: #fff;
+    grid-column: 1/6;
+    padding: 10px 25px 40px 25px;
+}
+
+    .picture img{
+        width: 100%;
+    }
+
+.profile{
+    background: #3498db;
+    grid-row: 2/5;
+}
+
+    .profile img{
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 100%;
+        margin: 15px auto;
+    }
+
+.review{
+    background-color: #fff;
+    grid-column: 6/-1;
+    padding: 10px 25px 40px 25px;
+}
+
+    .review p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+.flex-right{
+    margin-left: auto;
+}
+
+/*
+ *  Media Query
+*/
+
+@media only screen and (max-width: 624px){
+    body{
+        margin: 0;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto 30px;
+    }
+    .content, .picture, .review{
+        grid-column: 1/-1;
+        padding: 25px;
+    }
+        .review{
+            padding: 0px 25px 40px 25px;
+        }
+    .fas, .fab{
+        font-size: 2em !important;
+    }
+    .profile{
+        display: none;
+    }
+}
