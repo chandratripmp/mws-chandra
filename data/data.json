@@ -2,21 +2,73 @@
     "places": [
         {
             "lokasi": [
-                -6.221028,
-                106.791434
+                -7.983201,
+                112.637642
             ],
-            "sponsor": "Resto Spanyol",
-            "gambar": "images/planB.jpg",
-            "review": "restoran spanyol terbaik di Jakarta"
+            "nama": "Kampung Warna-warni Jodipan",
+            "sponsor": "<b>Kampung Warna-warni Jodipan</b><br><a style='cursor: pointer' href='https://goo.gl/maps/TxmCEKi4LcM2' target='_blank'>Lokasi</a>",
+            "gambar": "img/jodipan.jpg",
+            "review": "Bagi kamu yang ingin mencari spot foto ciamik di Malang, Kampung Warna-warni Jodipan bisa menjadi alternatif pilihanmu. Kampung yang berada di Kelutahan Jodipan, Blimbing, Malang itu memiliki bangunan berwarna-wani yang membuatnya menjadi kampung paling hits di Malang."
         },
         {
             "lokasi": [
-                -6.219912,
-                106.791239
+                -7.868254,
+                112.485042
             ],
-            "sponsor": "Warung Kopi",
-            "gambar": "images/warkop.jpg",
-            "review": "warung kopi cita rasa yang sangat tinggi dengan harga murah"
+            "nama": "Taman Labirin Coban Rondo",
+            "sponsor": "<b>Taman Labirin Coban Rondo</b><br><a style='cursor:pointer' target='_blank' href='https://goo.gl/maps/mN4ijeTVe5q'>Lokasi</a>",
+            "gambar": "img/labirin.jpg",
+            "review": "Tempat wisata Instagramable selanjutnya yang ada di Malang adalah Taman Labirin Coban Rondo. Sesuai namanya, taman ini berbentuk labirin dan menjadi salah satu tempat wisata hits di Malang."
+        },
+        {
+            "lokasi": [
+                -7.922928,
+                112.657002
+            ],
+            "nama": "Malang Night Paradise",
+            "sponsor": "<b>Malang Night Paradise</b><br><a style='cursor:pointer' target='_blank' href='https://goo.gl/maps/H2oJdLZGPgp'>Lokasi</a>",
+            "gambar": "img/mnp.jpg",
+            "review": "Malang Night Paradise merupakan tempat wisata baru yang hadir dengan konsep berbeda. Wisata alam di malam hari ini menyuguhkan beragam tempat menarik yang patut kamu coba, seperti Taman Lampion Air, Air Terjun Menari, Dino Park, dan lain sebagainya."
+        },
+        {
+            "lokasi": [
+                -7.854948,
+                112.497804
+            ],
+            "nama": "Omah Kayu Batu Malang",
+            "sponsor": "<b>Omah Kayu Batu Malang</b><br><a style='cursor:pointer' target='_blank' href='https://goo.gl/maps/yKUoKamm3u42'>Lokasi</a>",
+            "gambar": "img/omah-kayu.jpg",
+            "review": "Salah satu objek wisata alam berikutnya adalah Omah Kayu Batu Malang. Omah Kayu menyajikan konsep rumah yang menggunakan kayu sebagai struktur utamanya. Rumah-rumah ini dibangun di atas pohon pinus yang letaknya berada di lereng bukit."
+        },
+        {
+            "lokasi": [
+                -8.122909,
+                112.620597
+            ],
+            "nama": "Sumber Sira",
+            "sponsor": "<b>Sumber Sira</b><br><a style='cursor:pointer' target='_blank' href='https://goo.gl/maps/MSekbjWrqCw'>Lokasi</a>",
+            "gambar": "img/sumber-sira.jpg",
+            "review": "Ingin bermain air? Kamu bisa mengunjungi Danau Biru Sumber Sirah, Malang.<br><br>Terletak di Desa Sumber Jaya, Kecamatan Gendang Legi, Kabupaten Malang, Sumber Sirah menjadi temlat wisata Instagramable selanjutnya yang patut kamu kunjungi."
+        },
+        {
+            "lokasi": [
+                -7.865267,
+                112.361115
+            ],
+            "nama": "Waduk Selorejo",
+            "sponsor": "<b>Waduk Selorejo</b><br><a style='cursor:pointer' target='_blank' href='https://goo.gl/maps/nC5pwTH3u862'>Lokasi</a>",
+            "gambar": "img/selorejo.jpg",
+            "review": "Waduk Selorejo atau Bendungan Selorejo terletak di Desa Pandansari, Kecamatan Ngantang, Malang. Bendungan seluas kurang lebih 650 hektare ini dikeilingi tiga gunung, yaitu Gunung Kelud, Gunung Anjasmoro, dan Gunung Kawi."
+        },
+        {
+            "lokasi": [
+                -8.430169,
+                112.615103
+            ],
+            "nama": "Pantai Batu Bengkung",
+            "sponsor": "<b>Pantai Batu Bengkung</b><br><a style='cursor:pointer' target='_blank' href=''>Lokasi</a>",
+            "gambar": "img/batu-bengkung.jpg",
+            "review": "Pantai Batu Bengkung merupakan wisata alam yang berada di daerah pesisir Selatan dari Kabupaten Malang, tepatnya Malang Selatan. Panoramanya yanh indah dan ombaknya yang cukup besar menjadi daya tarik tersendiri dari pantai ini."
         }
     ]
 }

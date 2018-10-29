@@ -1,4 +1,4 @@
-var staticCacheName = 'mws-chandra-static-v10';
+var staticCacheName = 'mws-chandra-static-v11';
 
 self.addEventListener('install', function (event) {
   console.log("installing...");
@@ -8,12 +8,28 @@ self.addEventListener('install', function (event) {
       return cache.addAll([
         '/',
         '/index.html',
+        '/project1/index.html',
+        '/project2/index.html',
+        '/project3/index.html',
+        '/project4/index.html',
+        '/js/add2numbers.js',
         '/js/main.js',
+        '/js/fetch.js',
+        '/js/map.js',
         '/css/style.css',
+        '/css/style-layout.css',
         '/css/fontawesome.css',
+        '/data/data.json',
         '/img/icon.png',
         '/img/ava.jpg',
         '/img/tugu-malang.jpg',
+        '/img/batu-bengkung.jpg',
+        '/img/jodipan.jpg',
+        '/img/labirin.jpg',
+        '/img/mnp.jpg',
+        '/img/omah-kayu.jpg',
+        '/img/selorejo.jpg',
+        '/img/sumber-sira.jpg',
         'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
         'https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.eot',
         'https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.eot?#iefix',
