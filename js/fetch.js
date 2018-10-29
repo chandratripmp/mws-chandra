@@ -1,4 +1,5 @@
-const url = "../data/data.json";
+const web = "https://chandra-mws.firebaseapp.com/";
+const url = web + "data/data.json";
 
 fetch(url)
     .then(function (response) {
@@ -9,6 +10,7 @@ fetch(url)
     })
     .then( res => {
         localStorage.setItem('places', JSON.stringify(res.places));
+        showMarker();
     })
     .catch(function (err) {
         console.log("Error Fetching Data: " + err);
@@ -41,12 +43,24 @@ function findLocation(x, y) {
 function showLocation(e) {
     let ix = findLocation(e.latlng.lat, e.latlng.lng);
     if (ix >= 0) {
-        img.src = places[ix].gambar;
+        img.src = web + places[ix].gambar;
+        img.alt = places[ix].nama;
         par.innerHTML = places[ix].review;
         tit.textContent = places[ix].nama;
     }
 }
 
+function showMarker(){
+    places = JSON.parse(localStorage.getItem('places'));
+
+    for (var p of places) {
+        var marker = L.marker(p.lokasi).addTo(mymap)
+            .bindPopup(p.sponsor);
+        marker.on('click', showLocation);
+    }
+}
+
+let places;
 let gmb = document.getElementById("picture");
 let rev = document.getElementById("review");
 
@@ -57,10 +71,4 @@ gmb.appendChild(img);
 rev.appendChild(tit);
 rev.appendChild(par);
 
-let places = JSON.parse(localStorage.getItem('places'));
-
-for (var p of places) {
-    var marker = L.marker(p.lokasi).addTo(mymap)
-        .bindPopup(p.sponsor);
-    marker.on('click', showLocation);
-}
+// showMarker();
