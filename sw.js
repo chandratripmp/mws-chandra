@@ -1,4 +1,4 @@
-var staticCacheName = 'mws-chandra-static-v11';
+var staticCacheName = 'mws-chandra-static-v13';
 
 self.addEventListener('install', function (event) {
   console.log("installing...");
@@ -8,9 +8,13 @@ self.addEventListener('install', function (event) {
       return cache.addAll([
         '/',
         '/index.html',
+        '/project1/',
         '/project1/index.html',
+        '/project2/',
         '/project2/index.html',
+        '/project3/',
         '/project3/index.html',
+        '/project4/',
         '/project4/index.html',
         '/js/add2numbers.js',
         '/js/main.js',

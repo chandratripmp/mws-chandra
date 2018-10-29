@@ -96,7 +96,7 @@ body{
  *  Media Query
 */
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 624px){
     body{
         margin: 0;
     }
